@@ -1,8 +1,24 @@
 aid: onecard
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/onecard.png
 name: Onecard
-description: 'Onecard is a company surfaced as a portfolio company of qed-investors and added to the API
-  Evangelist network as a stub for enrichment. Sector: credit. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'OneCard is a mobile-first metal credit card from India''s FPL Technologies, a fintech
+  unicorn that reimagines credit and payments with full-stack, in-house technology. OneCard is issued
+  in partnership with banks including Bank of Baroda, CSB Bank, Federal Bank, SBM Bank, South Indian
+  Bank and Indian Bank, and emphasizes simplicity, transparency and giving control back to the user.
+  FPL Technologies also operates OneScore (credit-score monitoring) and Wizely (savings). Backed by
+  QED Investors, OneCard is a consumer-facing product; as of this profile it publishes no public
+  developer API, developer portal, or API documentation surface.'
 url: https://raw.githubusercontent.com/api-evangelist/onecard/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Credit
+- Fintech
+- Credit Card
+- Payments
+- Banking
+- India
+- Consumer Finance
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/onecard-domain-security.yml
 - type: Website
   url: https://www.getonecard.app/
+- type: Blog
+  url: https://www.getonecard.app/blog/
+- type: Support
+  url: https://www.getonecard.app/faq/
+- type: SignUp
+  url: https://apply.getonecard.app/
+- type: TermsOfService
+  url: https://www.getonecard.app/legal/terms/
+- type: PrivacyPolicy
+  url: https://www.getonecard.app/legal/privacy/
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
